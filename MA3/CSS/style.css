@@ -1,0 +1,104 @@
+
+
+.Title {
+    position: absolute;
+    top: -10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    font: 20px;
+   }
+   
+   .navbar {
+    position: absolute;
+    top: 50px;
+    width: 1263px;
+    opacity: 90%;
+   }
+   .container {
+     position: relative;
+     text-align: center;
+     color: white;
+   }
+.border{ border-radius: 25px;
+        border: 2px solid #fff58a;
+        padding: 15px;
+        margin: 15px;
+        width: px;
+        height: px;}
+
+body{
+    font-family: "belarius-poster";
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#logo{
+    padding: 0px;    
+}
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    overflow: hidden;
+    text-align:center;
+    font-size: 20px;
+    left: 240px;
+    
+    
+}
+ul.nav li{
+    display: inline-block;
+   
+}
+ul.nav li a{
+    display: block;
+    padding: 16px 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+ul.nav a:hover{
+    color: rgb(152, 188, 246);
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-gap: 0px;
+}
+
+.grid-item{
+   
+    font-size:15px;
+    
+}
+.backimg{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+.sidecol1{
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+.sidecol2{
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+.image1{
+    grid-column: 3;
+    grid-row: 2;
+    padding-right: 0;
+}
+.image2{
+    grid-column: 3;
+    grid-row: 3;
+    padding-right: 0;
+}
+.bottomcol1{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+h3{
+    color: #e18b0b;
+    font-size: 20px;
+}

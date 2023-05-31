@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="CSS/style.css">
+   
+</head>
+<body>
+    <style>
+        
+        #backimg{
+            background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255)),url(images/d4891b32-city-7054-17745b4e13e.jpg);
+            height: 400px;
+        }
+
+
+    </style>
+    <div class="container">
+        <div id="backimg"></div>
+        <h1 style="text-align: center; color: rgb(255, 255, 255); font-size: 25px" class="Title" id="change2">Parafia Św. Małgorzaty</h1>
+        <ul class="nav navbar">
+    
+            <li>
+                <!--<img id="logo" src = "images/mill wall logo final" alt="logo" width="65px 65px">--> 
+             </li>
+             <li>
+                 <a href="index.html" target="">Aktualności</a>
+             </li>
+             <li>
+                 <a href="Galeria.html"  target="">Galeria</a>
+             </li>
+             <li>
+                 <a href="Kontakt.html"  target="">Kontakt</a>
+             </li>
+             <li>
+                 <a href="Katecheza.html"  target="">Katecheza</a>
+             </li>
+             <li>
+                <a href="Historia.html"  target="">Historia</a>
+            </li>
+            <button style="border-radius: 15px; border: none;  padding: 2px 14px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" onclick="tagBack()">Biała</button>
+            <button style="border-radius: 15px; border: none;  padding: 2px 14px; background-color: black; color: white;" onclick="tagChange()">Czarna</button>
+            <li style="color: black; margin: 1% 20%; font-size: 23px;">
+             
+            </li>
+         </ul>
+         <!--<div class="subdiv2"></div>
+         <div class="headerdiv"><h2 class="bottom-leftnew">This</h2></div>
+         <div class="subdiv1"></div>-->
+    </div>
+    <h2 style="text-align: center; color: rgb(108, 148, 213);">Kontakty do istotnych członków naszej Parafii</h2>
+    <div class="grid-container" id="change">
+        <div class="grid-item sidecol1 border">
+        <h3>Parafia Św. Małgorzaty Szkockiej W Seattle</h3>
+St. Margaret of Scotland Church<br>
+3221 14th Ave W <br>                                         
+Seattle, WA 98119<br>
+USA<br>
+<br>
+tel. (206) 282-1804
+
+<h3>Biuro Parafialne</h3>
+Biuro parafialne czynne jest w każdy wtorek 9:00-11:00 AM<br>
+​W pilnych sprawach proszę dzwonić: ​(206) 282 -1804<br>
+                                                              
+<h3>Pracownicy Parafii</h3>
+Proboszcz:<br>
+<b>Ks. Andrzej Galant SChr</b><br>
+pastor@st-margaret-church.org<br>
+<br>
+<b>Księgowa:</b><br>
+Henryka Posłuszny<br>
+<br>
+<b>Organistka:</b><br>
+Ewa Rapca
+</div>
+    </div>
+   
+</body>
+<script>
+    function tagChange(){
+    
+    document.getElementById('change').style.color='white';
+    document.getElementById('change2').style.color='black';
+    document.body.style.backgroundColor='black';
+    var a = document.getElementsByTagName('a'); 
+    var length=a.length; 
+    for(var i=0; i<length;i++)
+    {a[i].style.color='black';}
+    var h2 = document.getElementsByTagName('h2'); 
+    var length=h2.length; 
+    for(var i=0; i<length;i++)
+    {h2[i].style.color='white';}
+    var h3 = document.getElementsByTagName('h3'); 
+    var length=h3.length; 
+    for(var i=0; i<length;i++)
+    {h3[i].style.color='white';}
+
+}
+function tagBack(){
+    document.getElementById('change').style.color='black';
+    document.getElementById('change2').style.color='white';
+    document.body.style.backgroundColor='white';
+    var a = document.getElementsByTagName('a'); 
+    var length=a.length; 
+    for(var i=0; i<length;i++)
+    {a[i].style.color='white';}
+    var h2 = document.getElementsByTagName('h2'); 
+    var length=h2.length; 
+    for(var i=0; i<length;i++)
+    {h2[i].style.color='#6c94d5';}
+    var h3 = document.getElementsByTagName('h3'); 
+    var length=h3.length; 
+    for(var i=0; i<length;i++)
+    {h3[i].style.color='#e18b0b';}
+
+}
+</script>
+</html>

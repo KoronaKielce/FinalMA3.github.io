@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katecheza</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        #backimg{
+            background-image: linear-gradient(to bottom, transparent, rgb(255, 255, 255)),url(images/d4891b32-city-7054-17745b4e13e.jpg);
+            height: 400px;
+            object-fit: cover;
+        }
+        .grid-container{
+            display:grid;
+    grid-template-columns: 35% 65%;
+    grid-gap: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="backimg"></div>
+        <h1 style="text-align: center; color: rgb(255, 255, 255); font-size: 25px;" class="Title" id="change2">Parafia Św. Małgorzaty</h1>
+        <ul class="nav navbar">
+    
+            
+             <li>
+                 <a href="index.html" target="">Aktualności</a>
+             </li>
+             <li>
+                 <a href="Galeria.html"  target="">Galeria</a>
+             </li>
+             <li>
+                 <a href="Kontakt.html"  target="">Kontakt</a>
+             </li>
+             <li>
+                 <a href="Katecheza.html"  target="">Katecheza</a>
+             </li>
+             <li>
+                <a href="Historia.html"  target="">Historia</a>
+            </li>
+            <button style="border-radius: 15px; border: none;  padding: 2px 14px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);" onclick="tagBack()">Biała</button>
+            <button style="border-radius: 15px; border: none;  padding: 2px 14px; background-color: black; color: white;" onclick="tagChange()">Czarna</button>
+            <li style="color: black; margin: 1% 20%; font-size: 23px;">
+             
+            </li>
+         </ul>
+         <!--<div class="subdiv2"></div>
+         <div class="headerdiv"><h2 class="bottom-leftnew">This</h2></div>
+         <div class="subdiv1"></div>-->
+    </div>
+    <h2 style="text-align: center; color: rgb(108, 148, 213);">Niedzielna Katecheza Parafialna Dla Dzieci I Młodzieży</h2>
+    <div class="grid-container" id="change">
+        
+        <div class="grid-item sidecol1 border"><p>
+            <h3>Zapraszamy Dzieci I Mlodzież Na Niedzielną Katechezę Parafialną</h3>
+            Od września do czerwca, w każdą niedzielę od 11:00 do 11:45 zapraszamy dzieci i młodzież na katechezę, której zasadniczym celem jest pogłębianie wiary i wiedzy religijnej oraz przygotowanie do sakramentów spowiedzi, komunii świętej i bierzmowania. Niedzielna katecheza jest nie tylko formą nauki religii, ale także rozwija u dzieci i młodzieży umiłowanie polskich tradycji religijno-patriotycznych. 
+            <h3>W Razie Jakichkolwiek Pytań Prosimy O Kontakt:</h3>
+            Ks. Andrzej Galant, SChr, proboszcz           tel. 206 282 1804    e-mail: pastor@st-margaret-church.org
+            Bądź z katechetami poszczególnych grup.
+            </p>
+            </div>
+        <div class="grid-item sidecol2 border" style="line-height: 25px;">
+            <h3>Zajęcia Prowadzone Są Grupach Wiekowych:</h3>
+            <p>
+            <b style="color: red;">Grupa IV</b> - dzieci klas 5-6 lat.<br>
+            <b style="color: green;">Grupa II</b> - „grupa komunijna” - dwuletni program przygotowania do I Spowiedzi i I Komunii Świętej dla dzieci, które w 2024 r. ukończą 9 rok życia.<br>
+            <b style="color: blue;">Grupa III</b> – dzieci klas 3 i 4<br>
+            <b style="color: purple;">Grupa IV</b> - dzieci klas 5 i 6<br>
+            <b style="color: orange;">Grupa VI</b> – przygotowanie do przyjęcia sakramentu bierzmowania – dwuletni program przygotowania do sakramentu chrześcijańskiej dojrzałości obejmuje młodzież, która w 2024 r. ukończy 13 rok życia.
+            Grupa Młodzieżowa – do udziału w spotkaniach grupy młodzieżowej zapraszamy młodzież w wieku 16 – 21 roku życia. Spotkania formacyjno-dyskusyjne na tematy związane z wiarą, chrześcijańskim wzrastaniem do dojrzałego życia i miłości.
+        </p>
+        </div>
+    </div>
+
+</body>
+<script>
+    function tagChange(){
+    
+    document.getElementById('change').style.color='white';
+    document.getElementById('change2').style.color='black';
+    document.body.style.backgroundColor='black';
+    var a = document.getElementsByTagName('a'); 
+    var length=a.length; 
+    for(var i=0; i<length;i++)
+    {a[i].style.color='black';}
+    var h2 = document.getElementsByTagName('h2'); 
+    var length=h2.length; 
+    for(var i=0; i<length;i++)
+    {h2[i].style.color='white';}
+    var h3 = document.getElementsByTagName('h3'); 
+    var length=h3.length; 
+    for(var i=0; i<length;i++)
+    {h3[i].style.color='white';}
+
+}
+function tagBack(){
+    document.getElementById('change').style.color='black';
+    document.getElementById('change2').style.color='white';
+    document.body.style.backgroundColor='white';
+    var a = document.getElementsByTagName('a'); 
+    var length=a.length; 
+    for(var i=0; i<length;i++)
+    {a[i].style.color='white';}
+    var h2 = document.getElementsByTagName('h2'); 
+    var length=h2.length; 
+    for(var i=0; i<length;i++)
+    {h2[i].style.color='#6c94d5';}
+    var h3 = document.getElementsByTagName('h3'); 
+    var length=h3.length; 
+    for(var i=0; i<length;i++)
+    {h3[i].style.color='#e18b0b';}
+
+}
+</script>
+</html>
